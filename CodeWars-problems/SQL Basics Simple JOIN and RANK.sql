@@ -20,4 +20,4 @@ count(sales.id) sale_count,
 rank() over(order by count(sales.id) desc) sale_rank from people --End columns
 inner join sales on sales.people_id = people.id
 group by people.id
-order by sale_count desc;
+order by sale_count desc; 
